@@ -1,185 +1,156 @@
-/**** BASE STYLES ****/
-
-
 body{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #2b2b2b; /*text color*/
-}
+    font-family: 'Montserrat', sans-serif;
+    }
 
-/****** GRID ******/
-
-.full-width{
+.container{
     width: 1200px;
-    margin: 0 auto; /*margin: 0 is for top-bottom, auto is for left-right: if you want to put any element at center position*/
-    overflow: auto;
-}
-
-.half-width{
-    width: 600px;
-    float:left;
-}
-
-.third-width{
-    width: 400px;
-    float: left;
-}
-
-/***** HEADER ****/ 
-
-header {
-    height: 800px;
-    background: url('../img/hero.png');/*see notes*/
-    background-size:cover;
-    background-position:center;
-}
-
-header h1 {
-    padding: 65px 0 65px 25px; /*top right bottom left */
-    font-family:'Lora', serif;
-    color: #bbc085;
-}
-
-nav {
-    float: right;
-    padding: 75px 25px; /*top bottom, left right */
-}
-nav ul li{
-        display: inline-block; /* puts icons beside eachother amd takes out the bullet points*/
-}
-
-nav ul li a {
-    text-transform:uppercase;
-    text-decoration: none;
-    font-size: 18px;
-    color: #828282;
-    padding-left: 80px; 
-}
-
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family:'Lora', serif;
-    font-size:  72px;
-    line-height:80px;
-    color: #9b9b9b;
-    padding: 20px 0 20px 25px;
-}
-
-header h2 span {
-    color: #2b2b2b;
-}
-/***** ABOUT ****/
-
-#About .full-width{ /* combinatiom: having an ID selector and a class selector on the same line with no commas or anything in betwen*/
-    padding: 80px 0; /*for the full-width class for the #about section, give it 80px of padding on the top and bottom, and no padding on either side.*/
-}
-
-#About h2{
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    padding-left: 50px; /* will push the about header to the left by 50px */
-}
-
-#About p {
-    font-size: 21px; 
-    color: #7f7f7f; 
-    line-height: 40px; /*spacing between each line*/
-    padding-left: 50px;/* will push the about paragraph to the left by 50px */
-    padding-right: 50px;/* will push the about paragraph to the right by 50px */
-}
-
-
-/***** WORK ****/
-
-#Work {
-    background: #F9CEB7;
-    text-align: center;
-}
-
-#Work .full-width{
-    padding: 115px 0;  /*115 padding for the top applies to the bottom and 0 is for left & right*/
-}
-
-#Work img {
-    padding-bottom: 30px;
-}
-
-#Work h3 {
-    font-size: 21px;
-    line-height: 32px;
-    width: 190px; /* the larger the number, the wider width */
     margin: 0 auto;
 }
 
-#Work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height:30px;
-    padding: 0 50px; /* 0 is for top-bottom & 50 is for left-right */
+h1,h3,h4 {
+    color:black;
+    font-weight:700;
+    text-transform: uppercase;
 }
 
-
-
-/***** CONTACT ****/
-
-#Contact {
-    background: #EBEBEB;
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 12px;
 }
 
-#Contact .full-width{
-    padding: 110px 0;
+p {
+	font-size: 14px;
+	line-height: 21px;
+    padding: 0 30px;
 }
 
-#Contact img#contact-img {  /* img doesnt have to be next to it does it ?*/
-    margin-left:  25px;
-    border: 12px solid #ffffff;
-
+header {
+    margin: 0 auto; 
+    border-bottom: 3px solid #76a465; 
+    height: 110px; 
 }
 
-#Contact h2, #Contact #email-header, #Contact #socialmedia-header, #Contact ul {
-    padding-left: 115px; /*pushes all icons to the left in the opposite diection (right)*/
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 38px 0;
 }
 
-#Contact #envelope {
-    padding: 0 10px 0 115px ; /*115px is the left*/
+header h1 span {
+    color: #76a465;
 }
 
-#Contact h2 {
-    font-family:'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
+header nav {
+	float: right;
+	padding: 46px 0;
+}
+header nav ul {
+	margin: 0; /* all sides*/
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 10px;/*top bottom is 0,left-right is 10*/
+	display: inline; /*puts each list on a straight line withoug bullet points*/
 }
 
-#Contact #email-header{
-    font-size: 32px;
-    font-weight: lighter;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
+header nav ul li a{
+	text-decoration: none; /*removes underline*/
+	color:#76a465;
 }
 
-#Contact #socialmedia-header{
-    font-size: 29px;
-    font-weight:bold;
-    line-height:44px;
-    margin: 40px 0 0 0;
+.top-section,
+.bottom-section {
+	margin: 0 auto; /*to fit screen*/
+	clear: both; 
 }
 
-#Contact a {
-    color: #c49075;
-    font-weight:bold;
-    font-size:28px;
-    text-decoration: none;
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+    border-bottom: 3px solid #76a465;
 }
 
-#Contact ul{
-    list-style: none; 
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a465;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
 }
 
-#Contact ul li {
-    display: inline-block; /* puts icons beside eachother and takes out the bullet points*/ 
+.section-one, 
+.section-two,
+.section-three {
+	width: 399px;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee; 
 }
 
-#Contact ul img{
-    font-size: 32px;
-    padding-right: 48px; 
+.section-one h4 {
+	padding: 10px 0;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px; /*top-bottom, left-right*/
+}
+
+.menu {
+	list-style: none; /*how you want to list the items eg:in bulletines?*/
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color: #77a465;
+}
+
+.section-two p {  /*can also choose to make a class for the p, like the solution*/
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.address { /*or ".section-three p"*/
+	font-size: 16px;
+	line-height: 24px;
+}
+
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
 }
